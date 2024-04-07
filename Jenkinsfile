@@ -5,6 +5,7 @@ pipeline {
             label 'maven'
         }
     }
+    stages {
          stage("Jar Publish") {
         steps {
             script {
@@ -30,4 +31,5 @@ pipeline {
             }
         }   
     }   
+}
 }
