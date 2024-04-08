@@ -28,8 +28,6 @@ environment {
                  echo "----------- unit test Complted ----------"
             }
         }
-
-    
          stage("Jar Publish") {
         steps {
             script {
