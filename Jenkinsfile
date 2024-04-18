@@ -36,7 +36,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "maven-repo-libs-release/{1}",
+                              "target": "valaxy-libs-release//{1}",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
