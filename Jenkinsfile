@@ -72,13 +72,14 @@ environment {
             }
         }
     }
-        stage (" deploy "){
-        steps {
-            script {
-                sh 'sudo chmod 755 deploy.sh'
-                sh ' ./deploy.sh '
-            }
-        }
-        }
+           stage(" Deploy ") {
+       steps {
+         script {
+            echo '<--------------- Helm Deploy Started --------------->'
+            sh 'helm install ttrend t-trend-0.1.0.tgz'
+            echo '<--------------- Helm deploy Ends --------------->'
+         }
+       }
+     }
 }
 }
