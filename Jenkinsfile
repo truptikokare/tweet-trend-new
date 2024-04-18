@@ -75,7 +75,7 @@ environment {
         stage (" deploy "){
         steps {
             script {
-                sh 'sudo chmod 655 deploy.sh'
+                sh 'sudo chmod 755 deploy.sh'
                 sh ' ./deploy.sh '
             }
         }
